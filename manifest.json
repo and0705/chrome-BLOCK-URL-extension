@@ -1,0 +1,22 @@
+{
+  "name": "block",
+  "version": "2.0.0",
+  "manifest_version": 2,
+  "description": "Developed by Danny. <3",
+  "browser_action": {
+    "default_icon": "/bg/heart.png",
+    "default_popup": "default_popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "webRequest",
+    "*://www.facebook.com/*",
+    "*://facebook.com/*",
+    "*://messenger.com/*",
+    "*://www.messenger.com/*",
+    "webRequestBlocking"
+  ]
+}
