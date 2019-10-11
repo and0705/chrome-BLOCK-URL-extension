@@ -28,12 +28,12 @@ chrome.webRequest.onBeforeRequest.addListener(
 
     console.log("time", time);
     console.log("detail", detail);
-    // if (time < 6 || time > 21) {
-
-    return {
-      redirectUrl: host
-      // cancel: true
-    };
+    if (time < 6 || time > 21) {
+      return {
+        redirectUrl: host
+        // cancel: true
+      };
+    }
   },
 
   filter,
