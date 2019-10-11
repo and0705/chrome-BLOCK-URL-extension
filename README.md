@@ -1,4 +1,4 @@
-# chrome_newtab
+# chrome_newtab and block Facebook on critical time.
 
 Created by Danny, based on internet. xD
 
