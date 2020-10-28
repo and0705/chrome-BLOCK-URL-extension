@@ -21,13 +21,11 @@ const opt_extraInfoSpec = ["blocking"];
 
 chrome.webRequest.onBeforeRequest.addListener(
   detail => {
-    let today = new Date();
-    let time = today.getHours();
+    const today = new Date();
+    const time = today.getHours();
     // let host = "./newtab.html";
-    let host = "https://tenor.com/search/cute-love-gifs";
+    const host = "https://tenor.com/search/cute-love-gifs";
 
-    console.log("time", time);
-    console.log("detail", detail);
     if (time < 6 || time > 21) {
       return {
         redirectUrl: host
